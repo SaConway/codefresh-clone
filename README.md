@@ -1,4 +1,4 @@
-**To run the project:**
+**To launch the application:**
 
 1. Run `npm install`.
 2. Run `ng serve`.
