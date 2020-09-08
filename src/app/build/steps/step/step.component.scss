@@ -46,12 +46,12 @@
     }
 
     &.completed::before {
-      content: url(/assets/completed.svg);
+      content: url(/assets/imgs/completed.svg);
       background-color: $clr-success;
     }
 
     &.terminated::before {
-      content: url(/assets/terminated.svg);
+      content: url(/assets/imgs/terminated.svg);
       background-color: $clr-err;
     }
   }

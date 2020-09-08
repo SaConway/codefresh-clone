@@ -1,3 +1,5 @@
+@import "~src/variables.scss";
+
 .btn {
   cursor: pointer;
   display: flex;
@@ -18,11 +20,11 @@
   }
 
   &.btn-build {
-    background-color: #5860fd;
+    background-color: $clr-running;
   }
 
   &.btn-stop {
-    background-color: #e43c3c;
+    background-color: $clr-err;
   }
 
   img {
