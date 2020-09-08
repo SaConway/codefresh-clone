@@ -1,0 +1,19 @@
+<div>
+  <button
+    class="btn btn-build"
+    (click)="onBuildClick()"
+    *ngIf="status != 'Running'"
+  >
+    Build
+    <img src="/assets/build.svg" />
+  </button>
+
+  <button
+    class="btn btn-stop"
+    (click)="onStopClick()"
+    *ngIf="status == 'Running'"
+  >
+    Stop
+    <img src="/assets/stop.svg" />
+  </button>
+</div>

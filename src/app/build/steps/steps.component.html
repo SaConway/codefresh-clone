@@ -1,0 +1,5 @@
+<ul class="steps">
+  <li *ngFor="let step of steps; let i = index">
+    <app-step [step]="step" [stepIndex]="i"></app-step>
+  </li>
+</ul>

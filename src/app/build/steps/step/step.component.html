@@ -1,0 +1,6 @@
+<div class="step">
+  <span class="step__index" [ngClass]="step.status.toLowerCase()">
+    {{ stepIndex + 1 }}</span
+  >
+  <span class="step__title">{{ step.name | cleanText }}</span>
+</div>

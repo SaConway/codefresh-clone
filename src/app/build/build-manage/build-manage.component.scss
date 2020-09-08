@@ -1,0 +1,32 @@
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 135px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5em 2.5em;
+  border: none;
+  border-radius: 8px;
+  color: #f1f3f8;
+  text-transform: uppercase;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &.btn-build {
+    background-color: #5860fd;
+  }
+
+  &.btn-stop {
+    background-color: #e43c3c;
+  }
+
+  img {
+    margin-left: 0.5em;
+    width: 1.2rem;
+  }
+}

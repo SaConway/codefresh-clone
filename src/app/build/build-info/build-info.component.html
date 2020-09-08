@@ -1,0 +1,17 @@
+<div class="info">
+  <p class="info__item">
+    <span class="status" [ngClass]="build.status.toLowerCase()">{{
+      build.status
+    }}</span>
+  </p>
+
+  <p class="info__item">
+    <span class="info__title">Steps</span>
+    {{ (numOfCompletedSteps | async) + "/" + build.steps.length }}
+  </p>
+
+  <p *ngIf="build.status !== 'Pending'" class="info__item">
+    <span class="info__title">Duration</span>
+    {{ buildDuration | async | formatDuration }}
+  </p>
+</div>

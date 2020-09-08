@@ -1,0 +1,30 @@
+.info {
+  display: flex;
+  align-items: center;
+  font-size: 0.8rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+}
+
+.info__item + .info__item {
+  margin-left: 2em;
+}
+
+.status {
+  width: 70px;
+  padding: 0.5em 1.25em;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 8px;
+  text-transform: uppercase;
+  color: #fff;
+}

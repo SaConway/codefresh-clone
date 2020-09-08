@@ -1,0 +1,14 @@
+<div class="container" *ngIf="build$ | async; let build">
+  <div class="top-bar">
+    <app-build-manage [status]="build.status"></app-build-manage>
+
+    <app-build-info [build]="build"></app-build-info>
+  </div>
+
+  <app-steps [steps]="build.steps"></app-steps>
+
+  <app-terminal
+    *ngIf="build.status !== 'Pending'"
+    [logs]="getLogs(build.steps)"
+  ></app-terminal>
+</div>
